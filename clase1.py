@@ -1,56 +1,46 @@
-# TIPOS DE DATOS
-# numero = 0
-# decimal = 1.1
-# string = "Hola!"
-# booleano = True
-# listas = [1,2,3,4,5]
-# tuplas = (1,2)
-# diccionarios = {"Llave":"Valor"}
+'''
+# Entrada de datos
+nombre = input("Ingresa tú nombre: ")
+edad = int(input("Ingresa tú edad: "))
+print("Hola ", nombre, " tu edad es: ", edad)
+print("Tú edad en 10 años será: ", (edad+10))'''
 
-# IMPRESION DE VARIABLES
-# print(numero, decimal, string, booleano, listas, tuplas, diccionarios)
+'''
+# Variables globales y locales
+x = "global"
 
-# ENTRADA DE DATOS
-# nombre = input("Ingresa tu nombre: ")
-# edad = int(input("Ingresa tu edad: "))
-# print("Hola " + nombre + ". Tu edad es: " + str(edad))
-# print("Tu edad en diez años sera " + str((edad + 10)))
+def miFuncion():
+    x = "local"
+    global x
+    x = "CD"
+    print("Hola soy una Variable", x)
 
-# VARIABLES GLOBALES Y LOCALES
-# x = "global"
-# def miFuncion():
-#     x = "local"
-#     print("Hola, soy una variable " + x)
-# miFuncion()
-# print("Hola, soy una variable " + x)
+miFuncion()
+print("Hola soy una Variable", x)
 
-# ESTRUCTURAS DE CONTROL
-# if(True or 1==0):
-#     print("Hola! Soy True")
-# elif(True and 1==2):
-#     print("Estoy en un elif")
-# else:
-#     print("Hola, soy else")
+# Estructura de dato (for, while)
+año = 2000
+while(año < 2020):
+    print("Año: ", str(año))
+    año += 1
 
-# ESTRUCTURAS DE DATO
-# año = 2000
-# while(año<2020):
-#     print("Año: " + str(año))
-#     año+=1
+for variable in range(0,10):
+    print(variable)
 
-# string = "Hola mundo"
-# for letra in string: 
-#     print(letra)
+string = "Hola Mundo"
+for letra in string:
+    print(letra)
+'''
 
+'''
+listas = [[1,2,3],[4,5,6],[7,8,9]]
 
-# listas = [[1,2,3], [4,5,6], [7,8,9]]
+string = ""
+for lista in listas:
+    #print(lista)
 
-# string = ""
-# for lista in listas:
-#     # print(lista)
-
-#     for numero in lista:
-#         # print(numero)
-#         string += str(numero) + " "
-
-# print(string)
+    for numero in lista:
+        #print(numero)
+        string += str(numero) + " "
+print(string)
+'''
